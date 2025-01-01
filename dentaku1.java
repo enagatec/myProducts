@@ -10,7 +10,7 @@ public class dentaku1 {
 		int kekka; /* 結果を格納 */
 
 		if (args.length != 3) {
-			System.out.println("引数は3つ入力してください");
+			System.out.println("引数は3つ入力してくださいませ");
 			System.exit(0); /* プログラムを終了する */
 		}
 
@@ -18,7 +18,7 @@ public class dentaku1 {
 			val1 = Integer.parseInt(args[0]);
 			val2 = Integer.parseInt(args[2]);
 		} catch (NumberFormatException e) {
-			errDisp("数値でない値が入力されています");
+			errDisp("数値でない値が入力されているようですね");
 			System.exit(0); /* プログラムを終了する */
 		}
 
@@ -43,7 +43,7 @@ public class dentaku1 {
 		}
 
 		if (errFlag == true) {
-			errDisp("演算子は kake waru tasu hikuの4つです");
+			errDisp("演算子は kake waru tasu hikuの4つから入力くださいませ");
 			System.exit(0); /* プログラムを終了する */
 		}
 
@@ -60,8 +60,8 @@ public class dentaku1 {
 			kekka = val1 / val2;
 		}
 
-		System.out.println("入力された式は " + val1 + " " + ope + " " + val2 + " です");
-		System.out.println("計算結果は"+kekka+"です");
+		System.out.println("入力された式は " + val1 + " " + ope + " " + val2 + " でございます");
+		System.out.println("計算結果は"+kekka+"でございます");
 	}
 	
 	private static void errDisp(String errStr){
